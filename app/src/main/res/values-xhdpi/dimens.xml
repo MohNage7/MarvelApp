@@ -1,0 +1,21 @@
+<resources>
+    <dimen name="sp_20">20.0sp</dimen>
+    <dimen name="sp_18">18.0sp</dimen>
+    <dimen name="sp_12">12.0sp</dimen>
+    <dimen name="sp_14">14.0sp</dimen>
+    <dimen name="sp_16">16.0sp</dimen>
+    <dimen name="dp_2">2.0dp</dimen>
+    <dimen name="dp_4">4.0dp</dimen>
+    <dimen name="dp_8">8.0dp</dimen>
+    <dimen name="dp_16">16.0dp</dimen>
+    <dimen name="dp_32">32.0dp</dimen>
+    <dimen name="dp_80">80.0dp</dimen>
+    <dimen name="dp_120">120.0dp</dimen>
+    <dimen name="dp_180">180.0dp</dimen>
+    <dimen name="dp_200">200.0dp</dimen>
+    <dimen name="dp_300">300.0dp</dimen>
+    <dimen name="viewpager_next_item_visible">26.0dp</dimen>
+    <dimen name="viewpager_current_item_horizontal_margin">42.0dp</dimen>
+    <dimen name="img_width_no_data">200.0dp</dimen>
+    <dimen name="img_height_no_data">200.0dp</dimen>
+</resources>

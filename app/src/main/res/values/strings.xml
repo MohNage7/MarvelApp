@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MarvelApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="character_image">Character Image</string>
+    <string name="action_search">Search</string>
+    <string name="server_error">Server Error</string>
+    <string name="no_data_available">No data available.</string>
+    <string name="no_data_found">No characters has been found.</string>
+    <string name="poster">poster</string>
+    <string name="title">title</string>
+    <string name="select">Select</string>
+    <string name="release_date">Release Date %1$s</string>
+    <string name="character_load_failure">Failed to get character. Please try again!</string>
+    <string name="play">Play Button</string>
+    <string name="comicList">COMICS</string>
+    <string name="hint_search">Search in characters…</string>
+    <string name="name">NAME</string>
+    <string name="description">DESCRIPTION</string>
+    <string name="title_activity_comics_details">ComicsDetailsActivity</string>
+
+</resources>

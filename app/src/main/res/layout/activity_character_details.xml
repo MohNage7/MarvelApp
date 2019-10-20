@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorPrimary"
+    tools:context=".characters.view.CharactersActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+         <FrameLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+             <ImageView
+                    android:id="@+id/back_drop_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_300"
+                    android:transitionName="@string/character_image"
+                    android:scaleType="centerCrop" />
+
+             <androidx.appcompat.widget.Toolbar
+                 android:id="@+id/toolbar"
+                 android:layout_width="match_parent"
+                 android:layout_height="?attr/actionBarSize"
+                 android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                 app:layout_collapseMode="pin" />
+
+         </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_8"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="@string/name"
+                    android:padding="@dimen/dp_8"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:textSize="@dimen/sp_18"
+                    android:textColor="@color/red"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/title_txt_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_8"
+                    android:layout_marginEnd="@dimen/dp_8"
+                    android:layout_marginBottom="@dimen/dp_8"
+                    android:textSize="@dimen/sp_20"
+                    android:textColor="@android:color/white"
+                    android:transitionName="@string/title"
+                    tools:text="Spider-Man: Far from Home" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="@string/description"
+                    android:padding="@dimen/dp_8"
+                    android:id="@+id/desc_label_tv"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/red"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/character_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_18"
+                    android:layout_marginStart="@dimen/dp_8"
+                    android:layout_marginEnd="@dimen/dp_8"
+                    android:textColor="@android:color/white"
+                    tools:text="Peter Parker and his friends go on a summer trip to Europe. However, they will hardly be able to rest - Peter will have to agree to help Nick Fury uncover the mystery of creatures that cause natural disasters" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="@string/comicList"
+                    android:padding="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/red"
+                    android:layout_height="wrap_content"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false" />
+
+                    <include
+                        layout="@layout/loading_horizontal_list"/>
+
+                </FrameLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

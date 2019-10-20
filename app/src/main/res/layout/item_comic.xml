@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_120"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/dp_8"
+    app:cardElevation="@dimen/dp_2"
+    app:cardBackgroundColor="@color/colorPrimary"
+    android:layout_height="@dimen/dp_180">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/content_img_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/grey"
+            android:contentDescription="@string/character_image"
+            android:scaleType="centerCrop"
+            android:transitionName="@string/poster" />
+
+        <TextView
+            android:id="@+id/content_title_txt_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:lines="2"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_12"
+            tools:text="Ant-Man and The Wasp 2010 #3"
+            android:textStyle="bold"
+            android:transitionName="@string/title" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
