@@ -1,7 +1,7 @@
 # MarvelApp
 
 Marvel application that is built with MVVM , Dagger2 , LiveData and Room.
-Using this application, users will be able to browse through the Marvel library of characters. The data is available by connecting to the Marvel API 
+Using this application, users will be able to browse through the Marvel library of characters.
 
 ## Preview 
 
